@@ -19,9 +19,10 @@ void print_diagonal(int n)
 			if (len == n - 1)
 				continue
 
-			_putchar('\n');
+					_putchar('\n');
 		}
 	}
 
 	_putchar('\n');
 }
+
