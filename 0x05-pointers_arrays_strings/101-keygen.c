@@ -25,6 +25,7 @@ int main(void)
 			i++;
 		}
 		while (c[k])
+		{
 			if (c[k] == (2772 - s))
 			{
 				p[i] = c[k];
@@ -32,10 +33,11 @@ int main(void)
 				i++;
 				break;
 			}
-		k++;
+
+			k++;
+		}
 	}
-}
-p[i] = '\0';
-printf("%s", p);
-return (0);
+	p[i] = '\0';
+	printf("%s", p);
+	return (0);
 }
