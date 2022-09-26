@@ -1,27 +1,11 @@
-i#include <stdio.h>
-
+#include <stdio.h>
 /**
- * print_diagsums - Print the sums of the two diagnols of a matrix
- * @a: The matrix
- * @size: The length of the arrays
+ * set_string - Set value of a pointer to a char
+ * @s: Pointer to the pointer we are chaning
+ * @to: Pointer to what we are setting it to
  */
 
-void print_diagsums(int *a, int size)
+void set_string(char **s, char *to)
 {
-	int i;
-	int sum1, sum2;
-	int len;
-
-	i = 0;
-	sum1 = sum2 = 0;
-	len = size * size;
-	while (i < len)
-	{
-		if (i % (size - 1) == 0 && i < len - 1 && i > 0)
-			sum2 += *(a + i);
-		if (i % (size + 1) == 0 || i == 0)
-			sum1 += *(a + i);
-		i++;
-	}
-	printf("%d, %d\n", sum1, sum2);
+	*s = to;
 }
